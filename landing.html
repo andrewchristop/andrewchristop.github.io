@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div id="outer">
+            <h1 id="conf">View Member Information </h1>
+            <hr>
+            <form id="sear">
+              <label for="sea">Query Board Member</label>
+              <input type="memname" id="memname" name="memname">
+              <input type="submit">
+              <br><br>
+              <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Position Assigned</th>
+                  <th>Commencement Date</th>
+                  <th>Termination Date</th>
+                </tr>
+                <tr>
+                  <td>Michael</td>
+                  <td>Kubis</td>
+                  <td>Board of Director Member</td>
+                  <td>29 May 2020</td>
+                  <td>12 Feb 2021</td>
+
+                </tr>
+                <tr>
+                    <td>Vincent</td>
+                    <td>Gabcik</td>
+                    <td>Board of Director Member</td>
+                    <td>23 Feb 2020</td>
+                    <td>14 Feb 2022</td>
+                <tr>
+                    <td>Vincent</td>
+                    <td>Markinson</td>
+                    <td>Board of Director Member</td>
+                    <td>2 Mar 2020</td>
+                    <td>TBA</td>
+                </tr>
+              </table>
+
+              <p id="lol">Select Report Type: </p>
+              <select>
+                  <option value="PDF">PDF</option>
+                  <option value="RTF">RTF</option>
+              </select>
+
+
+              <form id="interval">
+                <br>  
+                <label for="tinterval">Time Interval:</label>
+                <input type="tinterval" id="tinterval" name="tinterval">
+              </form>
+              <br>
+              <div id="inner">
+                <button type="repgen" id="repgen" onclick="pressed()">Generate Report</button>
+              </div>
+
+              <h1 id="conf">View Board Member Info </h1>
+            <hr>
+            <form id="dkaa">
+              <label for="sea">Search Member</label>
+              <input type="memname" id="memname" name="memname">
+              <input type="submit">
+              <br><br>
+              
+
+            </form>
+            <form id="info">
+                <br>
+                <h1>Add Member Information</h1>
+                <hr>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <br>
+                <label for="lname">Last Name:</label>
+                <input type="lname" id="lname" name="lname">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <br>
+                <label for="posassign">Position Assignment:</label>
+                <input type="posassign" id="posassign" name="posassign">
+                <br> <br>
+                <label for="comdate">Commencement Date:</label>
+                <input type="comdate" id="comdate" name="comdate">
+                <br><br>
+                <label for="termdate">Termination Date:</label>
+                <input type="termdate" id="termdate" name="termdate">
+                <br><br>
+                <input type="submit">
+            </form>
+            <br>
+            <br>
+            <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Position Assigned</th>
+                  <th>Commencement Date</th>
+                  <th>Termination Date</th>
+                </tr>
+                <tr>
+                  <td>Hans</td>
+                  <td>Landa</td>
+                  <td>CEO</td>
+                  <td>29 May 2020</td>
+                  <td>12 Feb 2021</td>
+
+                </tr>
+                <tr>
+                    <td>Mamoun</td>
+                    <td>Sharif</td>
+                    <td>CTO</td>
+                    <td>23 Feb 2020</td>
+                    <td>14 Feb 2022</td>
+                </tr>
+                <tr>
+                    <td>Frans</td>
+                    <td>Oberhauser</td>
+                    <td>CFO</td>
+                    <td>2 Mar 2020</td>
+                    <td>TBA</td>
+                </tr>
+              </table>
+              <br><br>
+              <p id="lol">Select Report Type: </p>
+              <select>
+                  <option value="PDF">PDF</option>
+                  <option value="RTF">RTF</option>
+              </select>
+
+
+              <form id="interval">
+                <br>  
+                <label for="tinterval">Time Interval:</label>
+                <input type="tinterval" id="tinterval" name="tinterval">
+              </form>
+              <br>
+              <div id="inner">
+                <button type="repgen" id="repgen" onclick="pressed()">Generate Report</button>
+              </div>
+              <br> <br>
+              <h1>Write an email</h1>
+              <hr>
+              <form id="usrform">
+                To: <input type="text" name="usrname">
+                <input type="submit">
+              </form>
+              <br>
+              <div class="msg">
+                <textarea id="msg" name="msg" rows="20" cols="80" >
+                    Enter message here...
+                </textarea>
+              </div>
+              <br>
+              <br>
+
+              <h1>Branch Information</h1>
+              <hr>
+              <br>
+              <h1>Add Branch</h1>
+              <form id="branch">
+                <label for="bname">Branch Name:</label>
+                <input type="text" id="bname" name="bname">
+                <br>
+                <br>
+                <label for="loc">Location:</label>
+                <input type="loc" id="loc" name="loc">
+                <br>
+                <br>
+                <label for="status">Status:</label>
+                <input type="status" id="status" name="status">
+                <br><br>
+                <input type="submit">
+            </form>
+            <br>
+            <br>
+            <table>
+                <tr>
+                  <th>Branch Name</th>
+                  <th>Location</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Branch A</td>
+                  <td>California</td>
+                  <td>Approved</td>
+
+                </tr>
+                <tr>
+                    <td>Branch B</td>
+                    <td>Virginia</td>
+                    <td>Not Approved</td>
+                </tr>
+                <tr>
+                    <td>Branch C</td>
+                    <td>Indiana</td>
+                    <td>Pending</td>
+                </tr>
+              </table>
+            <br>
+            <br>
+
+            <h1>Generate Population Report for Each Branch</h1>
+
+            <table>
+              <tr>
+                <th>Branch Name</th>
+                <th>Location</th>
+                <th>Code</th>
+                <th>Population Report</th>
+              </tr>
+              <tr>
+                <td>Branch A</td>
+                <td>California</td>
+                <td>CA1132</td>
+                <td><button class="population" onclick="pop()">Generate Report</button></td>
+
+              </tr>
+              <tr>
+                  <td>Branch B</td>
+                  <td>Virginia</td>
+                  <td>VA6969</td>
+                  <td><button class="population" onclick="pop()">Generate Report</button></td>
+              </tr>
+              <tr>
+                  <td>Branch C</td>
+                  <td>Indiana</td>
+                  <td>IN1414</td>
+                  <td><button class="population" onclick="pop()">Generate Report</button></td>
+              </tr>
+            </table>
+
+
+            <div id ="logout">
+                <form action="index.html">
+                    <button type="btn" class="logout" onclick="logout()">Log Out</button>
+                </form>
+                <br><br>
+            </div>
+
+            <div id="finances">
+              <h1>Generate Financial Report</h1>
+              <hr>
+
+              <p id="sel">Select Report Type: </p>
+              <select>
+                  <option value="PDF">PDF</option>
+                  <option value="RTF">RTF</option>
+              </select>
+
+
+              <form id="int">
+                <br>  
+                <label for="tinterval">Time Interval:</label>
+                <input type="tinterval" id="tinterval" name="tinterval">
+              </form>
+
+              <div id="sto">
+                <br>
+                <button type="repgen" id="repgen" onclick="pressed()">Generate Report</button>
+              </div>
+
+            </div>
+
+            <div id="receipt">
+              <br>
+              <br><br><br>
+              <h1>Generate Receipt of Paying Members</h1>
+              <hr>
+              <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Membership Type</th>
+                  <th>Amount Paid</th>
+                  <th>Date due</th>
+                  <th>Receipt</th>
+                </tr>
+                <tr>
+                  <td>Katie</td>
+                  <td>Duc</td>
+                  <td>Lifetime</td>
+                  <td>100</td>
+                  <td>21 Jan 2022</td>
+                  <td><button class="receipt" onclick="recei()">Generate Receipt</button></td>
+
+                </tr>
+                <tr>
+                    <td>Kelly</td>
+                    <td>Duc</td>
+                    <td>Honorary</td>
+                    <td>50</td>
+                    <td>14 Feb 2022</td>
+                    <td><button class="receipt" onclick="recei()">Generate Receipt</button></td>
+                </tr>
+                <tr>
+                    <td>Jian</td>
+                    <td>Yang</td>
+                    <td>Lifetime</td>
+                    <td>100</td>
+                    <td>14 March 2022</td>
+                    <td><button class="receipt" onclick="recei()">Generate Receipt</button></td>
+                </tr>
+              </table>
+
+              <br><br>
+
+            </div>
+
+            <div id="late">
+              <h1>Notify Late Paying Members by E-Mail</h1>
+              <hr>
+              <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Membership Type</th>
+                  <th>Amount due</th>
+                  <th>Date due</th>
+                  <th>Late by</th>
+                  <th>Send Notification</th>
+                </tr>
+                <tr>
+                  <td>Madeleine</td>
+                  <td>Lee</td>
+                  <td>Lifetime</td>
+                  <td>300</td>
+                  <td>21 Jan 2022</td>
+                  <td>2 months</td>
+                  <form action="notify.html">
+                    <td><button class="notif" onclick="notif()">Notify</button></td>
+                  </form>
+
+                </tr>
+                <tr>
+                    <td>Jenny</td>
+                    <td>Tran</td>
+                    <td>Honorary</td>
+                    <td>50</td>
+                    <td>14 Feb 2022</td>
+                    <td>1 month</td>
+                    <form action="notify.html">
+                      <td><button class="notif" onclick="notif()">Notify</button></td>
+                    </form>
+                </tr>
+                <tr>
+                    <td>Kelly</td>
+                    <td>Yang</td>
+                    <td>Lifetime</td>
+                    <td>100</td>
+                    <td>14 March 2022</td>
+                    <td>2 days</td>
+                    <form action="notify.html">
+                      <td><button class="notif" onclick="notif()">Notify</button></td>
+                    </form>
+                </tr>
+              </table>
+            </div>
+
+            <br>
+            <div id="appr">
+              <br><h1>Approve and store information of new members</h1>
+              <hr>
+              <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Membership Type</th>
+                  <th>Date Account Created</th>
+                  <th>Approve</th>
+                </tr>
+                <tr>
+                  <td>Mari</td>
+                  <td>Noemi</td>
+                  <td>Lifetime</td>
+                  <td>2 April 2022</td>
+                  <td><button class="apr" onclick="approve()">Approve</button></td>
+
+                </tr>
+                <tr>
+                    <td>Antonela</td>
+                    <td>Miroslava</td>
+                    <td>Lifetime</td>
+                    <td>14 Feb 2022</td>
+                    <td><button class="apr" onclick="approve()">Approve</button></td>
+                </tr>
+                <tr>
+                    <td>Lucia</td>
+                    <td>Tamar</td>
+                    <td>Honorary</td>
+                    <td>1 March 2022</td>
+                    <td><button class="apr" onclick="approve()">Approve</button></td>
+                </tr>
+                <tr>
+                  <td>Zhaklina</td>
+                  <td>Aurora</td>
+                  <td>Honorary</td>
+                  <td>11 March 2022</td>
+                  <td><button class="apr" onclick="approve()">Approve</button></td>
+                </tr>
+              <tr>
+                <td>Oluwayesi</td>
+                <td>Zosime</td>
+                <td>Honorary</td>
+                <td>1 March 2022</td>
+                <td><button class="apr" onclick="approve()">Approve</button></td>
+              </tr>
+              </table>
+            </div>
+
+            <br><br>
+
+            <div id="Upcoming meetings">
+              <h1>Notify Members of Upcoming Meetings</h1>
+              <hr>
+              <table>
+                <tr>
+                  <th>Upcoming event</th>
+                  <th>Date of upcoming event</th>
+                  <th>Time</th>
+                  <th>Notify</th>
+                </tr>
+                <tr>
+                  <td>Board members meeting</td>
+                  <td>4 April 2022</td>
+                  <td>16:30</td>
+                  <form action="notify.html">
+                    <td><button class="notify" onclick="notify()">Notify</button></td>
+                  </form>
+                </tr>
+                <tr>
+                    <td>Branch meeting</td>
+                    <td>5 April 2022</td>
+                    <td>14:30</td>
+                    <form action="notify.html">
+                      <td><button class="notify" onclick="notify()">Notify</button></td>
+                    </form>
+                </tr>
+                <tr>
+                    <td>Budget Meeting</td>
+                    <td>15 April 2022</td>
+                    <td>11:30</td>
+                    <form action="notify.html">
+                      <td><button class="notify" onclick="notify()">Notify</button></td>
+                    </form>
+                </tr>
+              </table>
+            </div>
+
+        </div>
+    </body>
+</html>

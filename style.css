@@ -1,0 +1,154 @@
+*{
+    font-family: Helvetica;
+}
+
+#test{
+    width: 290px;
+    height: 100px;
+}
+
+p{
+    text-align: center;
+}
+
+.navbar1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: blue;
+}
+
+li{
+    float:left;
+}
+
+html, body, #outer{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: visible;
+}
+
+#outer{
+    display: table;
+}
+
+li a{
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: pink;
+}
+
+#im1{
+    width: 100%;
+    height: 700px;
+    display: table-row;
+}
+
+.rect{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
+
+#newu, #tut{
+    text-align: center;
+    font-size: x-large;
+}
+
+#loginfield, #logout{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#login{
+    font-size: large;
+}
+
+#info{
+    text-align: center;
+
+}
+
+h1{
+    text-align: center;
+}
+
+table,form{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+select{
+    display: block;
+    margin: 0 auto;
+}
+
+#lol, #sel{
+    text-align: center;
+}
+
+#repgen{
+    display: block;
+    margin: 0 auto;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+th, td{
+    padding:8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+    background-color: blue;
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+}
+
+button, input[type=submit]{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 3px;
+}
+
+input[type=submit], #repgen, .receipt, .population, .notif, .apr, .checkmem, .notify, #send{
+    background-color: rgb(75, 143, 250);
+    color: #fff;
+}
+
+input[type=submit]:hover, #repgen:hover, .population:hover, .notif:hover, .receipt:hover, .apr:hover, .checkmem:hover, .notify:hover, #send:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+.logout{
+    background-color: red;
+    color: #fff;
+}
+
